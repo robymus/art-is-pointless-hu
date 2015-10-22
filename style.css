@@ -1,0 +1,89 @@
+body > div {
+  width: 550px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+.container {
+  width: 550px;
+  height: 600px;
+  -webkit-perspective: 1000px;
+  float: left;
+}
+
+.cube {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(-275px) rotateY(-45deg) translateY(50px) translateX(-50px);
+  left: 15%;
+  position: relative;
+  margin: 0;
+  width: 550px;
+  height: 600px;
+  -webkit-transition: 1s;
+}
+
+.cube > div {
+  width: 548px;
+  height: 498px;
+  position: absolute;
+  border: 1px solid #fff;
+  color: #000;
+  font: 1.5em Arial;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+#front {
+  -webkit-transform: translateZ(275px);
+  background: #aaa;
+}
+
+#right {
+  -webkit-transform: rotateY(90deg) translateZ(275px);
+  background: #eee;
+}
+
+#front > div {
+  position: relative;
+  right: 5%;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+#right > div {
+  position: relative;
+  left: 5%;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+a {
+  font: 1em Arial;
+  color: #44f;
+  text-decoration: none;
+  float: right;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.maincontainer {
+  width: 100%;
+}
+
+div.iframecontainer {
+  float: left;
+  width: 800px;
+}
+
+iframe {
+  width: 800px;
+  height: 800px;
+  margin: 20px;
+  float: left;
+  overflow: none;
+  border: none;
+}
